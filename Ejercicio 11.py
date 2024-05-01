@@ -1,7 +1,4 @@
-# Pedir al usuario una palabra
-palabra = input("Por favor, ingresa una palabra: ")
+cad = input("Introduce una palabra:\n")
 
-# Usar un bucle for para recorrer las letras en orden inverso
-for i in range(len(palabra) - 1, -1, -1):
-    letra = palabra[i]
-    print(letra)
+for i in range(len(cad)-1,-1,-1):
+    print(cad[i])

@@ -1,10 +1,4 @@
-# Pedir al usuario un número entero
-altura = int(input("Por favor, ingresa un número entero: "))
+h = int(input("Introduce un numero entero:\n"))
 
-# Verificar que la altura sea un número positivo
-if altura <= 0:
-    print("La altura debe ser un número positivo.")
-else:
-    # Usar un bucle for para imprimir el triángulo
-    for i in range(1, altura + 1):
-        print('*' * i)
+for juan in range(1, h+1, 1):
+    print("*"*juan)

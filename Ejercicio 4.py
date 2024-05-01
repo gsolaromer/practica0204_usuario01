@@ -1,11 +1,7 @@
-# Solicitar al usuario su edad
-edad = int(input("Ingrese su edad: "))
+edad = int(input("Escribe tu edad porfavor:\n"))
+sueldo = int(input("Escribe tus ingresos mensuales: \n"))
 
-# Solicitar al usuario sus ingresos mensuales
-ingresos = float(input("Ingrese sus ingresos mensuales en €: "))
-
-# Verificar si el usuario debe tributar o no
-if edad > 16 and ingresos >= 1000:
-    print("Debe tributar.")
+if edad > 16 and sueldo >= 1000:
+    print("Tienes que tributar")
 else:
-    print("No debe tributar.")
+    print("No tienes que tributar")

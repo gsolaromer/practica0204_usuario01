@@ -1,16 +1,8 @@
-# Pedir al usuario una frase
-frase = input("Por favor, ingresa una frase: ")
+frase = input("Escribe una frase:\n")
+letra = input("Escribe una letra:\n")
+cont=0
+for i in frase:
+    if i == letra:
+        cont+=1
 
-# Pedir al usuario una letra
-letra = input("Por favor, ingresa una letra: ")
-
-# Inicializar un contador para el número de veces que aparece la letra
-contador = 0
-
-# Usar un bucle for para contar las ocurrencias de la letra en la frase
-for caracter in frase:
-    if caracter == letra:
-        contador += 1
-
-# Mostrar el resultado
-print(f'La letra "{letra}" aparece {contador} veces en la frase: "{frase}"')
+print("La letra " + letra + " aparece " + str(cont) + " veces ")

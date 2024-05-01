@@ -1,8 +1,5 @@
 while True:
-    entrada = input("Introduce algo (o escribe 'salir' para terminar): ")
-    
-    if entrada.lower() == "salir":
-        print("¡Saliendo del programa!")
+    frase = input("Escribe una frase:\n")
+    if frase == "salir":
         break
-    else:
-        print("Eco: " + entrada)
+    print(frase)

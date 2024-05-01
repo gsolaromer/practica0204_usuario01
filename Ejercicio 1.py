@@ -1,13 +1,8 @@
-# Almacena la contraseña en una variable
-contrasena_guardada = "ContraseñaSegura"
+password = "HolaMundo"
 
-while True:
-    # Pide al usuario que ingrese la contraseña
-    contrasena_ingresada = input("Ingrese su contraseña: ")
+contra = input("Introduce tu contraseña: \n")
 
-    # Compara las contraseñas sin importar mayúsculas y minúsculas
-    if contrasena_guardada.lower() == contrasena_ingresada.lower():
-        print("¡Contraseña correcta!")
-        break  # Sale del bucle si la contraseña es correcta
-    else:
-        print("Contraseña incorrecta. Inténtelo de nuevo.")
+if password.lower() == contra.lower():
+    print("La contraseña es correcta")
+else:
+    print("La contraseña es incorrecta")

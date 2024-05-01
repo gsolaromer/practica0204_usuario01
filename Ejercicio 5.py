@@ -1,16 +1,14 @@
-# Solicitar al usuario su nombre
-nombre = input("Ingrese su nombre: ")
+nombre = input("Escribe tu nombre:\n")
+sexo = input("Escribe tu sexo como M o H: \n")
 
-# Solicitar al usuario su sexo
-sexo = input("Ingrese su sexo (M para mujer, H para hombre): ")
+if sexo == "M":
+    if nombre.lower()<"m":
+        print("Tu grupo es Gryffindor")
+    else:
+        print("Tu grupo es Slytheryn")
 
-# Convertir el nombre a minúsculas para facilitar la comparación
-nombre = nombre.lower()
-
-# Verificar a qué casa pertenece el usuario
-if (sexo == 'm' and nombre < 'm') or (sexo == 'h' and nombre > 'n'):
-    casa = "Gryffindor"
 else:
-    casa = "Slytherin"
-
-print("Usted pertenece a la casa de", casa)
+    if nombre.lower()>"n":
+        print("Tu grupo es Slytheryn")
+    else:
+        print("tu grupo es Gryffindor")

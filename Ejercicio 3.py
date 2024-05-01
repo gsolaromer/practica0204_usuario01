@@ -1,8 +1,8 @@
-# Solicitar al usuario un número entero
-numero = int(input("Ingrese un número entero: "))
+numero = int(input("Introduce un numero entero: \n"))
 
-# Verificar si el número es par o impar
-if numero % 2 == 0:
-    print("El número", numero, "es par.")
+d=numero%2
+
+if d == 0:
+    print("Es numero par")
 else:
-    print("El número", numero, "es impar.")
+    print("Es un numero impar")
